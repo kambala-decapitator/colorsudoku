@@ -376,7 +376,7 @@ void initLang()
 		switch(PRIMARYLANGID(GetUserDefaultLangID()))
 		{
 			case LANG_CATALAN: s=_T("Catalan"); break;
-			case LANG_CZECH: s=_T("Èesky"); break;
+			case LANG_CZECH: s=_T("ÄŒesky"); break;
 			case LANG_GERMAN: s=_T("Deutsch"); break;
 			case LANG_FRENCH: s=_T("French"); break;
 			case LANG_POLISH: s=_T("Polski"); break;
