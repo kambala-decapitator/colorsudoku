@@ -8,7 +8,7 @@
 #include "lang.h"
 
 #define Mmulti 8            //number of grids
-#define Msymbol 20          //number of symbols
+#define Msymbol 30          //number of symbols
 #define Mlen Msymbol        //line length
 #define Msize Msymbol       //single grid size
 #define Mextentx (Msize*5-8) //entire board width
