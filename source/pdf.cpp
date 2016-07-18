@@ -389,7 +389,7 @@ void Pdf::print(HWND hDlg)
 		}
 		fprintf(f, "]/Count %d>>endobj\n", pages);
 		refA[4]= ftell(f);
-		fprintf(f, "4 0 obj<</Type/Font/Subtype/Type1/Encoding/WinAnsiEncoding/FirstChar 32/LastChar 255/BaseFont/%s/Name/F0>>endobj\n", "Arial");
+		fprintf(f, "4 0 obj<</Type/Font/Subtype/Type1/Encoding/WinAnsiEncoding/FirstChar 32/LastChar 255/BaseFont/%s/Name/F0>>endobj\n", "Book Antiqua");
 
 		//calculate sudoku dimensions
 		sudWidth =(pageWidth-2*border+spacing)/cols;
