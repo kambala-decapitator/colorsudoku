@@ -1,1 +1,6 @@
 *.user*
+debug
+release
+ipch
+*.sdf
+*.VC.opendb
