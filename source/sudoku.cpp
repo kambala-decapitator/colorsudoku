@@ -600,7 +600,7 @@ BOOL CALLBACK PdfProc(HWND hWnd, UINT msg, WPARAM wP, LPARAM)
 		case WM_COMMAND:
 			wP=LOWORD(wP);
 			if(wP==IDOK){
-				pdfObject.count = GetDlgItemInt(hWnd, 160, 0, FALSE);
+				pdfObject.count = 2 * GetDlgItemInt(hWnd, 160, 0, FALSE);
 				//page properties
 				pdfObject.pageWidth = GetDlgItemInt(hWnd, 163, 0, FALSE);
 				pdfObject.pageHeight = GetDlgItemInt(hWnd, 164, 0, FALSE);

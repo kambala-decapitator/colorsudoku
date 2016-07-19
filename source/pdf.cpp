@@ -401,6 +401,7 @@ void Pdf::print(HWND hDlg)
 		borderX = (pageWidth+spacing-sudWidth*cols)>>1;
 		borderY = (pageHeight+spacing-sudHeight*rows)>>1;
 
+		bool solveMode = false;
 		for(page=0, counter=count; counter>0; page++){
 			refA[++obj]= ftell(f);
 			fprintf(f, "%d 0 obj<</Type/Page/Parent 3 0 R/MediaBox [0 0 %d %d]"
@@ -418,7 +419,9 @@ void Pdf::print(HWND hDlg)
 					SetWindowText(hDlg, buf);
 					UpdateWindow(hDlg);
 					//generate one sudoku
-					newGame();
+					solveMode ? resolve() : newGame();
+					solveMode = !solveMode;
+
 					sudLeft = x;
 					sudTop = y;
 					gridx=(float)(sudWidth-spacing)/extentx;

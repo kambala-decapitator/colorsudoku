@@ -3,4 +3,6 @@ debug
 release
 ipch
 *.sdf
-*.VC.opendb
+*.VC.*db
+*.iobj
+*.ipdb
